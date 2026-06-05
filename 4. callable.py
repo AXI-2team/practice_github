@@ -14,7 +14,7 @@ cursor = conn.cursor()
 def call_incre2(empno, rate):
     try:
         cursor.callproc('INCRE2', (empno, rate))
-        print(f'호출성공 ({empno}번 사원이 {rate}% 인상 완료)')
+        print(f'호출성공 ({empno}번 사원이 {rate}% 인상 완료했습니다.)')
     except pymysql.Error as e:
         print(f'INCRE2 프로시저 호출 실패 : {e}')
     finally:
