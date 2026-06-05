@@ -10,7 +10,7 @@ DB='python_schema'
 TNAME = 'jdbct'
 sql = f'select * from {TNAME} order by no'
 
-print('(1) 방법 1 : pymysql(cursor) 사용하여 df로 변환 - 가현 수정')
+print('(1) 방법 1 : pymysql(cursor) 사용하여 df로 변환 - 가현 수정 텍스트 수정')
 conn = pymysql.connect(host=HOST, port=PORT, database=DB, user=USER, password=PASS, charset='utf8mb4')
 cursor = conn.cursor()
 
